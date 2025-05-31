@@ -37,7 +37,17 @@ export function ParticleNetworkBackground({
   const isMouseInCanvasRef = useRef(false);
   const animationFrameId = useRef<number | undefined>(undefined);
 
-  const initParticles = (width: number, height: number) => {
+
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+
+    const initParticles = (width: number, height: number) => {
     const particles: Particle[] = [];
     for (let i = 0; i < particleCount; i++) {
       particles.push({
@@ -50,20 +60,12 @@ export function ParticleNetworkBackground({
     }
     particlesRef.current = particles;
   };
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-    const updateCanvasSize = () => {
+      const updateCanvasSize = () => {
       const rect = canvas.getBoundingClientRect();
       canvas.width = rect.width;
       canvas.height = rect.height;
       initParticles(rect.width, rect.height);
     };
-
     const handleMouseMove = (e: MouseEvent) => {
       if (!interactive) return;
       const rect = canvas.getBoundingClientRect();
