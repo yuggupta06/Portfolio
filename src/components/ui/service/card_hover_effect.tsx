@@ -14,13 +14,11 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   // Track if component is in viewport
   const [inView, setInView] = useState(false);
 
-  // Track if animation played once
-  const [hasAnimated, setHasAnimated] = useState(false);
 
   // Check screen size >= md (768px)
   const [isMdUp, setIsMdUp] = useState(false);

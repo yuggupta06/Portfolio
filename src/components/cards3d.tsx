@@ -15,17 +15,17 @@ function Card({ text, index }: CardProps) {
 
   // Rotate when card enters viewport
   useEffect(() => {
+    const node = cardRef.current; 
     const observer = new IntersectionObserver(
       ([entry]) => {
         setRotation(entry.isIntersecting ? 0 : 90);
       },
       { threshold: 0.3 }
     );
-
-    if (cardRef.current) observer.observe(cardRef.current);
-    return () => {
-      if (cardRef.current) observer.unobserve(cardRef.current);
-    };
+    if (node) observer.observe(node);
+     return () => {
+    if (node) observer.unobserve(node); // use the same node from above
+  };
   }, []);
 
   // Parallax effect

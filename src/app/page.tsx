@@ -1,13 +1,8 @@
-import { FloatingNavDemo } from "@/components/ui/Navbar/navbar";
-import Image from "next/image";
 import Hero from "@/components/Hero";
 import AbouMe from "@/components/AbouMe";
 import { BentoGridDemo } from "@/components/ui/Bento-Grid/bentoDemo";
-import ServicesSection, { CardHoverEffectDemo } from "@/components/ServiceSection";
-import { AnimatedPinDemo } from "@/components/ui/pin3d/animated-pinDemo";
-import { TracingBeam } from "@/components/ui/Tracing-Beam/tracing_beam";
+import { CardHoverEffectDemo } from "@/components/ServiceSection";
 import Footer from "@/components/footer";
-import { ThreeDCardDemo } from "@/components/ui/3dcard-Effect/3dcard";
 
 export default function Home() {
   return (

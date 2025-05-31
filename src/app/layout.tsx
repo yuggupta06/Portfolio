@@ -1,10 +1,9 @@
 "use client";
-import type { Metadata } from "next";
 import { useIsMediumUp } from "../components/cutsom_hooks/useMediumUp";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import "./globals.css";
 import { TracingBeam } from "@/components/ui/Tracing-Beam/tracing_beam";
 import { ParticleNetworkBackground } from "@/components/ui/background/particle-backgroud";
+
 export default function RootLayout({
   children,
 }: Readonly<{

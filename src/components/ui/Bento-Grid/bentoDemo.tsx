@@ -1,9 +1,7 @@
-"use client";
-import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./bento-grid";
-import { useInView } from "react-intersection-observer";
 import { PinPerspective } from "../pin3d/3dpin";
+import Image from "next/image";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -34,7 +32,7 @@ export function BentoGridDemo() {
 }
 const Skeleton = ({ imageURL, gitURL }: { imageURL: string, gitURL: string }) => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
-    <img
+    <Image
       src={imageURL}
       alt="Project Preview"
       className="w-full h-full object-cover rounded-xl"

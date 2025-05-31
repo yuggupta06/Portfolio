@@ -1,6 +1,4 @@
-
 import { cn } from "@/lib/utils";
-import { PinPerspective } from "@/components/ui/pin3d/3dpin";
 export const BentoGrid = ({
   className,
   children,

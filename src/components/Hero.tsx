@@ -1,11 +1,9 @@
 "use client"
 import React from "react"
 import { FloatingNavDemo } from "./ui/Navbar/navbar"
-import Spline from "@splinetool/react-spline"
 import { TextGenerateEffect } from "./ui/text-generate-effect"
 import { useInView } from "react-intersection-observer"
 import { useEffect, useState } from "react"
-import dynamic from 'next/dynamic';
 
 export default function Hero() {
   const [ref,inView]=  useInView({
@@ -24,10 +22,6 @@ export default function Hero() {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-full">
       <FloatingNavDemo />
-       {/* <Spline
-        scene="https://prod.spline.design/eh88vjt5FBkxdXyi/scene.splinecode" 
-        className="absolute inset-0 -z-0"
-      /> */}
       <div ref={ref} className="flex flex-row items-center justify-center w-full z-10">
         <TextGenerateEffect key={instanceKey}   words={intro} />
       </div>
