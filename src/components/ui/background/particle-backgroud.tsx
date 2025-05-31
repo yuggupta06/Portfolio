@@ -57,7 +57,6 @@ export function ParticleNetworkBackground({
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-
     const updateCanvasSize = () => {
       const rect = canvas.getBoundingClientRect();
       canvas.width = rect.width;
@@ -161,7 +160,6 @@ export function ParticleNetworkBackground({
       }
     };
   }, [
-    initParticles,
     particleColor,
     lineColor,
     maxDistance,

@@ -26,7 +26,7 @@ export default function AbouMe() {
         viewport={{ once: true, amount: 0.5 }} // appears once, when 50% visible
         className="flex flex-col space-y-7 lg:w-full text-shadow-white text-center text-[12px] sm:text-xl lg:text-lg px-5 sm:px-9 lg:p-0 font-bold text-white"
       >
-         <span>I&rsquo;m a freelance web developer with a passion for transforming ideas into clean, modern, and high-performing websites. Whether it's building from scratch or upgrading an existing site.</span>
+         <span>I&rsquo;m a freelance web developer with a passion for transforming ideas into clean, modern, and high-performing websites. Whether itI&rsquo;s building from scratch or upgrading an existing site.</span>
         <span>I focus on creating responsive, user-friendly, and professional-looking web experiences. I work closely with clients to enhance their online presence, improve functionality, and deliver results that align with their business goals.</span>
         <span>With a strong foundation in HTML, CSS, JavaScript, and modern frameworks like React, Next JS and Tailwind CSS, I stay current with the latest web trends and best practices to ensure every site I build is fast, secure, and SEO-friendly.</span>
       </motion.div>

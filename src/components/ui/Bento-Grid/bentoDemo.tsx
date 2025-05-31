@@ -4,7 +4,6 @@ import { PinPerspective } from "../pin3d/3dpin";
 import Image from "next/image";
 import {
   IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
   IconBoxAlignTopLeft,
   IconClipboardCopy,
   IconFileBroken,
