@@ -36,6 +36,8 @@ const Skeleton = ({ imageURL, gitURL }: { imageURL: string, gitURL: string }) =>
       src={imageURL}
       alt="Project Preview"
       className="w-full h-full object-cover rounded-xl"
+      width={100}
+      height={100}
     />
       <PinPerspective 
         title={gitURL} href={gitURL} />
@@ -83,13 +85,6 @@ const items = [
     description: "Smart system to track books, users, and library activity.",
     header: <Skeleton imageURL="/images/library.jpg" gitURL="https://github.com/yuggupta06/Library-Management-System" />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Spirit of Adventure",
-    gitURL:"https://github.com/yuggupta06/The-Spirit-of-Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton imageURL="dcv" gitURL={""}/>,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
   // <BentoGrid className="max-w-4xl mx-auto">
