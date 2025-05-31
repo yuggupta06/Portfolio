@@ -14,7 +14,7 @@ export default function Home() {
         <section id="about" className="w-full h-screen  flex items-center justify-center -my-20 sm:my-0 ">
           <AbouMe />
           </section>
-          <section id="projects" className="w-full px-10 py-20 sm:px-15 sm:py-30 lg:py-20   flex items-center justify-center">
+          <section id="projects" className="w-full px-10 py-50 sm:px-15 sm:py-30 lg:py-20   flex items-center justify-center">
             <BentoGridDemo/>
           </section>
           <section id="services" className="w-full h-screen   flex items-center justify-center mt-[40rem] md:mt-20">
